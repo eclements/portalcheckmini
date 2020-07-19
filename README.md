@@ -16,7 +16,7 @@ To use this project to create your own Synthetic test, simply follow the "Gettin
 ## Dependancies
 ### Maven Dependancies
 The programme relies on the following dependancies that will automatically be downloaded and compiled with Maven: (see pom.xml for details)
-* Selenium - for web page interactions
+* Selenium WebDriver - for web page interactions (example case is based on the Firefox WebDriver / geckodriver)
 * Maven testNG Plugin - definition of test classes and methods. To generate the PASS/FAIL asserts.
 * InfluxDB Java Client - time series database for PASS/FAIL data point metrics.
 * Log4J - for logging
