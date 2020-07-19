@@ -93,6 +93,9 @@ public class WebDriverHelper {
 		} else if (isUnix) {
 			logger.debug("Detected Unix OS.");
 			osName = "unix";
+			browserDriverPath = "/usr/bin/geckodriver";
+			browserBinPath = "/usr/bin/firefox";
+			browserLogfilePath = "/dev/null";	
 		} else if (isMac) {
 			logger.debug("Detected Mac OS.");
 			osName = "macos";
