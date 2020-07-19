@@ -23,10 +23,10 @@ The programme relies on the following dependancies that will automatically be do
 * [JSWaiter](https://www.swtestacademy.com/selenium-wait-javascript-angular-ajax/) - by By Onur Baskirt. For Javascript and Jquery waits in Selenium (included as a class)
 ### Manual Dependancies
 Please ensure you have the following dependancies installed/downloaded on your machine:
-* [Selenium Firefox (Gecko) WebDriver](https://github.com/mozilla/geckodriver/releases) - Download the appropriate WebDriver for your environment.
+* [Selenium Firefox (Gecko) WebDriver](https://github.com/mozilla/geckodriver/releases) - Download the appropriate WebDriver for your environment. For Ubuntu 18.04 make sure to download the previous version of Gecko WebDriver v25 from https://github.com/mozilla/geckodriver/releases/tag/v0.25.0
 ```
-wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
-tar -zxvf geckodriver-v0.26.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz
+tar -zxvf geckodriver-v0.25.0-linux64.tar.gz
 cp geckodriver /usr/bin/
 ```
 * [Firefox Binary](https://www.mozilla.org/en-US/firefox/new/) - You will need a firefox binary to run PortalCheckMini. Set the path to your binary in PortalCheckMini's config.properties file. For Ubuntu you can do:
