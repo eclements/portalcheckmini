@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PortalTestSuite">
+    <listeners>
+        <listener class-name="core.InfluxDBListener" />
+    </listeners>
+  <test thread-count="1" name="PortalTestSet01">
+    <classes>
+      <class name="portalcheck.Trello_Flow01"/> <!-- CreateOffer -->
+    </classes>
+  </test> <!-- CrefoTest -->
+</suite> <!-- PortalTestSuite -->

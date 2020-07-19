@@ -1,0 +1,32 @@
+driverName=firefox
+browserDriverPath=/Users/YOURUSERNAME/selenium/geckodriver
+browserBinPath=/Applications/Firefox.app/Contents/MacOS/firefox
+browserLogfilePath=/dev/null
+
+#Windows:
+#browserDriverPath=C:\\portalcheckmini\\geckodriver_v24_win64.exe
+#browserBinPath=C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe
+#browserLogfilePath=C:\\portalcheckmini\\browser.log
+
+#Unix:
+#browserDriverPath = "/usr/bin/geckodriver_26_linux64";
+#browserBinPath = "/usr/bin/firefox";
+#browserLogfilePath = "/dev/null";
+
+isHeadless=false
+
+portalURL=https://www.trello.com
+portalUsername=YOUR_TRELLO_USERNAME
+portalPassword=YOUR_TRELLO_PASSWORD
+	
+threadSleepTimeDropdowns=2000
+defaultXpathWaitS=60
+webDriverWaitSeconds=60
+defaultWaitForText=60
+
+influxDbHostURL=http://YOUR_HOSTNAME_FQDN:8086
+influxDbUsername=YOUR_INFLUX_USERNAME
+influxDbPassword=YOUR_INFLUXDB_PASSWORD
+influxDbName=YOUR_INFLUX_DBNAME
+
+isSendPointsToInfluxDB=true
