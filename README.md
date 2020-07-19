@@ -1,5 +1,5 @@
 # PortalCheckMini
-##### A Synthetic Java Robot for end-to-end monitoring of Web Portals in a Grafana Dashboard with InfluxDB, TestNG and Selenium.
+### A Synthetic Java Robot for end-to-end monitoring of Web Portals in a Grafana Dashboard with InfluxDB, TestNG and Selenium.
 Latest stable version: 0.0.17
 ## What?
 A simple Selenium Java programme that executes a set of steps against a web portal. Stores all step results (testNG) in a time series database (InfluxDB). Comes with an "out of box" Grafana Dashboard template.
