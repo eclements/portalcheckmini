@@ -3,6 +3,7 @@
 Latest stable version: 0.0.17
 ## What?
 A simple Selenium Java programme that executes a set of steps against a web portal. Stores all step results (testNG) in a time series database (InfluxDB). Comes with an "out of box" Grafana Dashboard template.
+![alt text](https://github.com/eclements/portalcheckmini/blob/master/portalcheckmini_grafana_dashboard.png?raw=true)
 ## Why?
 Reduce the time it takes to create your own Selenium Java robot to monitor your web portal. Use PortalCheckMini as a template to quickly create up to 10 steps or more clicking through your web portal, including login and logout.
 
