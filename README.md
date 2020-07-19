@@ -24,7 +24,19 @@ The programme relies on the following dependancies that will automatically be do
 ### Manual Dependancies
 Please ensure you have the following dependancies installed/downloaded on your machine:
 * [Selenium Firefox (Gecko) WebDriver](https://github.com/mozilla/geckodriver/releases) - Download the appropriate WebDriver for your environment.
-* [Firefox Binary](https://www.mozilla.org/en-US/firefox/new/) - You will need a firefox binary to run PortalCheckMini. Set the path to your binary in PortalCheckMini's config.properties file.
+```
+wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
+tar -zxvf geckodriver-v0.26.0-linux64.tar.gz
+cp geckodriver /usr/bin/
+```
+* [Firefox Binary](https://www.mozilla.org/en-US/firefox/new/) - You will need a firefox binary to run PortalCheckMini. Set the path to your binary in PortalCheckMini's config.properties file. For Ubuntu you can do:
+```
+sudo apt install firefox
+```
+* Maven
+```
+sudo apt install maven
+```
 ## Geting Started
 To use this project, you will need to setup 4x different areas:
 1. **Server Side** - InfluxDB and Grafana on your server
