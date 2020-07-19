@@ -67,7 +67,9 @@ Note: Can also be run on server in headless mode. Use "isHeadless" property in c
 2. **Download Selenium Firefox WebDriver** if not already downloaded. [Download the geckodriver](https://github.com/mozilla/geckodriver/releases)
 3. **Clone** or download the PortalCheckMini repo to get the source code
 ```
-git clone https://github.com/eclements/portalcheckmini.git
+mkdir /opt/portalcheckmini
+cd /opt/portalcheckmini
+git clone https://github.com/eclements/portalcheckmini.git /opt/portalcheckmini
 ```
 4. Use the example config file to **create your own config file**:
 ```
@@ -139,13 +141,13 @@ Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.065 sec - in 
 ```
 12. Schedule your Java app to run every 10 minutes. You can use Jenkins but for simplicity I use crontab:
 ```
-0,10,20,30,40,50 4-19 * * 0-5   ubuntu_root     /usr/bin/flock -n /tmp/portalcheckmini.lockfile /usr/local/bin/runportalcheckmini.sh >> /var/log/portalcheckmini/test.log 2>&1
+0,10,20,30,40,50 4-19 * * 0-5   ubuntu     /usr/bin/flock -n /tmp/portalcheckmini.lockfile /usr/local/bin/runportalcheckmini.sh >> /var/log/portalcheckmini/test.log 2>&1
 ```
 Example bash script for cron job. Create this script at /usr/local/bin/runportalcheckmini.sh:
 ```
 #!/bin/bash
 cd /var/log/portalcheckmini
-mvn -f /usr/local/portalcheckmini/java/pom.xml test
+mvn -f /opt/portalcheckmini/java/pom.xml test
 ```
 
 ### Grafana
