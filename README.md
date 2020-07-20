@@ -2,7 +2,7 @@
 ### A Synthetic Java Robot for end-to-end monitoring of Web Portals in a Grafana Dashboard with InfluxDB, TestNG and Selenium.
 Latest stable version: 0.0.17
 ## What is it?
-PortalCheckMini is a very simple Java program that aims to be the foundation for mini Java robots that execute a flows of steps against a web portal. The Java program will run 10x steps in a flow (or more), and store all the step results in a time series database. The PASS/FAIL results (and time taken to execute) is then shown in a Grafana dashboard. The project is written as an abstract structure within which new flows can quickly be coded for any web portal.
+PortalCheckMini is a very **simple Java program** that aims to be the **foundation for mini Java robots** that execute a **flows of steps** against a **web portal**. The Java program will run 10x steps in a flow (or more), and store all the step results in a **time series database**. The **PASS/FAIL** results (and time taken to execute) is then shown in a **Grafana dashboard***. The project is written as **boiler plate code** (but with a concrete example) within which new flows can quickly be coded for any web portal.
 
 This project is specifically written so that any person with basic Java skills can create a new end to end monitoring robot in under 2 hours for their web portal, together with a sexy Grafana dashboard as in this example.
 
