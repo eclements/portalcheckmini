@@ -13,6 +13,7 @@ This project is specifically written so that any person with basic Java skills c
 * **A SeleniumHelper Class** with multiple .click(), .input() methods that hide the complexity of Selenium interations, xPath strings and wait methods in a blackbox.  
 * **TestNG configured** with a test suite, test set and test methods. These methods are in turn already configured as input metrics in the template Grafana dashboard.
 * **A Grafana template** that is already hooked up with grafana queries to read the doStep01, doStep02, etc method PASS/FAIL results from your flow. No headaches on setting up Grafana queries or how to link Java/Grafana. That is all taken care of.
+* **An example** flow that clicks through Trello.com and reports into the Grafana template dashboard.
 ## Why?
 Reduce the time it takes to create your own Selenium Java robot to monitor your web portal.  Use PortalCheckMini as a **template** to quickly create steps that click automatically through your web portal, including login and logout boilerplates. Don't waste time to configure Grafana dashboards queries, use the template and build your customisations on top. 
 ## Example: End-To-End Monitoring of Trello.com 
