@@ -29,7 +29,7 @@ To use this project you simply need:
 2. **Adapt each of the DO methods** (doStep01", "doStep02", "doStep03") to perform the clicks you want on your web portal.
 3. The Grafana dashboard will automatically read the results from these steps and show in your dashboard if you use the provided template.
 
-*Note: that your **class name is important**, if you change "Trello_Flow01.java" to your own name, the dashboard will have to be updated to point to that new Metric key name. TestNG sends the class name and method name as KEYS to InfluxDB/Grafana. An improvement is planned to make the Class selectable in a Grafana variable at the top of the dashboard*
+*Note: that your **class name is important**, if you change "Trello_Flow01.java" to your own name, the dashboard will have to be updated to point to that new Metric key name. TestNG sends the class name and method name as TAGS to InfluxDB/Grafana. An improvement is planned to make the Class selectable in a Grafana variable at the top of the dashboard*
 ## Dependancies
 ### Maven Dependancies
 The programme relies on the following dependancies that will automatically be downloaded and compiled with Maven: (see pom.xml for details)
@@ -40,7 +40,7 @@ The programme relies on the following dependancies that will automatically be do
 * [JSWaiter](https://www.swtestacademy.com/selenium-wait-javascript-angular-ajax/) - by By Onur Baskirt. For Javascript and Jquery waits in Selenium (included as a class)
 
 ## Support
-Contact me via LinkedIn for support: [Eric Clements](https://www.linkedin.com/in/eric-clements-15591613)
+For support or questions contact [Eric Clements](https://www.linkedin.com/in/eric-clements-15591613)
 
 ## References
 The following articles and examples were used to build PortalCheckMini. It is recommended to familiarise yourself with these articles to use PortalCheckMini:
