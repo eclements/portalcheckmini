@@ -1,3 +1,4 @@
+# Install Guide
 ## Geting Started
 To use this project, you will need to go through 6x installation steps:
 1. **Trello Setup (Optional: for the Example)** - Create a Trello board, so that the example Robot Flow can interact with the board.
