@@ -39,8 +39,8 @@ Install the following dependancies:
         cp geckodriver /usr/bin/
 
 2. **Firefox Binary**
-2.1 You will need a [firefox binary](https://www.mozilla.org/en-US/firefox/new/) to run PortalCheckMini.
-2.2 Set the path to your firefox binary in config.properties file.
+        1. You will need a [firefox binary](https://www.mozilla.org/en-US/firefox/new/) to run PortalCheckMini.
+        2. Set the path to your firefox binary in config.properties file.
 
         sudo apt install firefox
         sudo apt install maven
@@ -129,7 +129,6 @@ To compile and run the java program:
 2.1 Select "InfluxDB" type. 
 2.2 Configure it with "Basic AUthentication" to point to your InfluxDB instance created in "Server Side" above. 
 3. **Create a new Grafana dashboard** by **importing** the PortalCheckMini template (click + icon and then import)
-
 3.1 Use the [template provided](https://github.com/eclements/portalcheckmini/blob/master/grafana/Synthetic%20Dashboard%20for%20Java%20Selenium%20Robot%20-%20PortalCheckMini.json) in the /grafana folder in this repo.
 4. Set the dashboard **datasource** to **portalcheckmini_monitoring_results**, the datasource you just created.
 5. You should see your Robot Dashboard in Grafana.
